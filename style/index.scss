@@ -1,0 +1,211 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.text {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.product {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    &__image {
+        max-width: 340px;
+        min-height: 300px;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+    &__interaction {
+        width: 100%;
+        margin-left: 30px;
+    }
+    &__name {
+        border-bottom: 1px solid #E6E6E6;
+    }
+    &__header {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    &__weight {
+        margin: 20px 0;
+        color: #787878;
+    }
+}
+
+.composition {
+    margin-top: 30px;
+    &__header {
+        font-size: 18px;
+    }
+    &__list {
+        color: #787878;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+}
+
+.action {
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        margin: 25px 0 15px;
+    }
+    &__header {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    &__total {
+        font-size: 16px;
+        color: #787878;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding: 15px 20px;
+        background-color: #F6F7F8;
+        border-radius: 5px;
+    }
+    &__cart {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15%;
+    }
+    &__price {
+        font-size: 32px;
+        font-weight: bold;
+    }
+    &__button {
+        padding: 20px 50px;
+        font-size: 18px;
+        background-color: #DE341D;
+        color: #FFFFFF;
+        border-radius: 100px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.ingredient {
+    display: flex;
+    &__price {
+        margin-left: 10px;
+        color: #787878;
+    }
+}
+
+.counter {
+    display: flex;
+    &__amount {
+        margin: 0 25px;
+    }
+    &__remove {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 9px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #000000;
+        }
+    }
+    &__add {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 9px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #000000;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 9px;
+            width: 2px;
+            height: 100%;
+            background-color: #000000;
+        }
+    }
+}
